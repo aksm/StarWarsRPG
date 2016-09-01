@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="intro-container game-container background-container">
+<head>
+	<meta charset="UTF-8">
+	<title>STAR WARS RPG</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+	<!-- CSS reset -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- CSS for scrolling intro -->
+	<link rel="stylesheet" type="text/css" href="assets/css/intro.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+	<body class="intro-container game-container">
+		<header class="gameplay">
+			<h1>STAR</h1>
+			<h1>WARS</h1>
+		</header>
+
+		<!-- Canvas container for character animation-->
+		<div id="canvasDiv" class="gameplay"></div>
+
+		<!-- Transition messages between rounds and games -->
+		<div id="transition-text"></div>
+
+		<!-- Audio elements -->
+		<audio id="audio-start" src="assets/audio/saberstart.mp3"></audio>
+		<audio id="audio-attack" src="assets/audio/saberswing.mp3"></audio>
+		<audio id="audio-gameover" src="assets/audio/darkside.mp3"></audio>
+		<audio id="audio-attackwin" src="assets/audio/saberswingwin.mp3"></audio>
+		<audio id="audio-winround" src="assets/audio/goodluck.mp3"></audio>
+		<audio id="audio-wingame" src="assets/audio/force.mp3"></audio>
+
+		<!-- Game logic -->
+		<script src="assets/javascript/animation.js"></script>
+		<script src="assets/javascript/game.js"></script>
+
+		<!-- Intro with crawling text -->
+		<div id="intro">
+			<p id="start">One week ago in a coding boot camp not so far away&hellip;</p>
+
+			<h1 id="introHead">STAR WARS<sub>The RPG</sub></h1>
+
+			<div id="titles"><div id="titlecontent">
+
+				<p class="center">CLICK TEXT TO SKIP INTRO<br /><br />EPISODE VIII<br />THE FORCE AWAKENS</p>
+					
+				<p>Luke Skywalker has vanished. In his absence, the sinister FIRST ORDER has risen from the ashes of the Empire and will not rest until Skywalker, the last Jedi, has been destroyed.</p>
+				
+				<p>With the support of the REPUBLIC, General Leia Organa leads a brave RESISTANCE. She is desperate to find her brother Luke and gain his help in restoring peace and justice to the galaxy.</p>
+				
+				<p>Leia has sent her most daring pilot on a secret mission to Jakku, where an old ally has discovered a clue to Luke's whereabouts&hellip;</p>
+
+			</div></div>
+			<audio id="introAudio" autoplay src="assets/audio/intro.mp3"></audio>
+			<script src="assets/javascript/intro.js"></script>
+		</div>
+	</body>
+</html>
