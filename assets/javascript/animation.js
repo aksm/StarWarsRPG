@@ -122,6 +122,8 @@ function redraw(characters) {
 		canvas = document.getElementById(character);
 		if(game.fighters.length == 2) {
 			$("#"+character).addClass("fighter"+k);
+		} else {
+			$("#"+character).addClass("characters");			
 		}
 		context = canvas.getContext("2d");
   

@@ -89,102 +89,122 @@ h2 {
 	height: 25%;
 	border: 4px solid #ffff00;
 }
-#canvasDiv {
-	max-height: 200px;
-}
 @media (min-width: 400px) {
-  .fighter0, .fighter1 {
-  	width: 200px;
-    height: auto;
-    position: absolute;
-  }
-  .fighter0 {
-	left: 60px;
-	top: 65%;
-  }
-  .fighter1 {
-	left: 160px;
-	top: 65%;
-  }
-
+  	.fighter0, .fighter1 {
+	  	width: 200px;
+	    height: auto;
+	    position: absolute;
+  	}
+  	.fighter0 {
+		left: 60px;
+		top: 65%;
+  	}
+	.fighter1 {
+		left: 160px;
+		top: 65%;
+	}
+	.characters {
+		width: 150px;
+		height: auto;
+	}
 }
 @media (min-width: 440px) {
-  .fighter0, .fighter1 {
-  	width: 250px;
-    height: auto;
-    position: absolute;
-  }
-  .fighter0 {
-	left: 150px;
-	top: 60%;
-  }
-  .fighter1 {
-	left: 260px;
-	top: 60%;
-  }
+  	.fighter0, .fighter1 {
+  		width: 250px;
+    	height: auto;
+    	position: absolute;
+  	}
+  	.fighter0 {
+		left: 150px;
+		top: 60%;
+  	}
+  	.fighter1 {
+		left: 260px;
+		top: 60%;
+  	}
+	.characters {
+		width: 150px;
+		height: auto;
+	}
 
 }
 @media (min-width: 500px) {
-  .fighter0, .fighter1 {
-  	width: 250px;
-    height: auto;
-    position: absolute;
-  }
-  .fighter0 {
-	left: 150px;
-	top: 60%;
-  }
-  .fighter1 {
-	left: 260px;
-	top: 60%;
-  }
+  	.fighter0, .fighter1 {
+  		width: 250px;
+    	height: auto;
+    	position: absolute;
+  	}
+  	.fighter0 {
+		left: 150px;
+		top: 60%;
+  	}
+  	.fighter1 {
+		left: 260px;
+		top: 60%;
+  	}
+	.characters {
+		width: 200px;
+		height: auto;
+	}
 
 }
 @media (min-width: 630px) {
-  .fighter0, .fighter1 {
-  	width: 250px;
-    height: auto;
-    position: absolute;
-  }
-  .fighter0 {
-	left: 250px;
-	top: 60%;
-  }
-  .fighter1 {
-	left: 360px;
-	top: 60%;
-  }
+  	.fighter0, .fighter1 {
+  		width: 250px;
+    	height: auto;
+    	position: absolute;
+  	}
+  	.fighter0 {
+		left: 250px;
+		top: 60%;
+  	}
+  	.fighter1 {
+		left: 360px;
+		top: 60%;
+  	}
+	.characters {
+		width: 200px;
+		height: auto;
+	}
 
 }
 @media (min-width: 768px) {
-  .fighter0, .fighter1 {
-  	width: 250px;
-    height: auto;
-    position: absolute;
-  }
-  .fighter0 {
-	left: 350px;
-	top: 60%;
-  }
-  .fighter1 {
-	left: 460px;
-	top: 60%;
-  }
+  	.fighter0, .fighter1 {
+  		width: 250px;
+    	height: auto;
+    	position: absolute;
+  	}
+  	.fighter0 {
+		left: 350px;
+		top: 60%;
+  	}
+  	.fighter1 {
+		left: 460px;
+		top: 60%;
+  	}
+	.characters {
+		width: 250px;
+		height: auto;
+	}
 
 }
 @media (min-width: 1200px) {
-  .fighter0, .fighter1 {
-  	width: 250px;
-    height: auto;
-    position: absolute;
-  }
-  .fighter0 {
-	left: 450px;
-	top: 60%;
-  }
-  .fighter1 {
-	left: 560px;
-	top: 60%;
-  }
+  	.fighter0, .fighter1 {
+  		width: 250px;
+    	height: auto;
+    	position: absolute;
+  	}
+  	.fighter0 {
+		left: 450px;
+		top: 60%;
+  	}
+  	.fighter1 {
+		left: 560px;
+		top: 60%;
+  	}
+	.characters {
+		width: 250px;
+		height: auto;
+	}
 
 }
