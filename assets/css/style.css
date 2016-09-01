@@ -4,7 +4,6 @@
 	font-family: 'StarWars';
 	src: url('../fonts/Starjedi.ttf');
 }
-/** { padding: 0; margin: 0; }*/
 
 header {
 	display: inline-block;
@@ -24,6 +23,7 @@ h1 {
 }
 #canvasDiv {
 	display: inline-block;
+	margin-top: 50px;
 }
 
 .background-container {
@@ -90,6 +90,9 @@ h2 {
 	border: 4px solid #ffff00;
 }
 @media (min-width: 400px) {
+	h1 {
+		font-size: 100px;
+	}
   	.fighter0, .fighter1 {
 	  	width: 200px;
 	    height: auto;
@@ -106,6 +109,9 @@ h2 {
 	.characters {
 		width: 150px;
 		height: auto;
+	}
+	.transition {
+
 	}
 }
 @media (min-width: 440px) {
@@ -189,6 +195,9 @@ h2 {
 
 }
 @media (min-width: 1200px) {
+	h1 {
+		font-size: 150px;
+	}
   	.fighter0, .fighter1 {
   		width: 250px;
     	height: auto;
