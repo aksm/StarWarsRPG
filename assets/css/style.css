@@ -67,12 +67,12 @@ h2 {
 	filter: FlipH;
 }
 .fighter0 {
-	position: fixed;
+	position: absolute;
 	left: 25%;
 	top: 60%;
 }
 .fighter1 {
-	position: fixed;
+	position: absolute;
 	left: 35%;
 	top: 60%;
 }
