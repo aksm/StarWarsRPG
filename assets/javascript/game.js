@@ -21,6 +21,7 @@ var game = {
 	opponenthp: 0,
 	characters: [],
 	opponentsLeft: true,
+	backgrounds: ["assets/images/bk1.jpg", "assets/images/bk2.jpg", "assets/images/bk3.jpg", "assets/images/bk4.jpg", "assets/images/bk5.jpg"],
 	// jQuery html elements
 	playerElement: $('#player'),
 	opponentsElement: $('#opponents'),
@@ -56,7 +57,8 @@ var game = {
 	 		this.opponenthp = this.players[this.fighters[1]].hp;
 	 		$("#"+this.fighters[1]).addClass("picked-opponent");
 	 		this.characters.splice(this.characters.indexOf(this.fighters[1]),1);
-	 		setTimeout(function() {this.canvasDiv.empty()}.bind(this), 500);
+			$(".background-container").css("background-image", "url('"+game.backgrounds[Math.floor(Math.random() * (4 - 0 + 1))]+"')");
+			setTimeout(function() {this.canvasDiv.empty()}.bind(this), 500);
 	 		clearInterval(rlInterval);
 			setTimeout(function() {prepareCanvas(document.getElementById("canvasDiv"), 300, 300, this.fighters)}.bind(this),1000);
 			setTimeout(function() {this.audioStart.play();}.bind(this),1000);
@@ -82,11 +84,12 @@ var game = {
 				setTimeout(function() {this.transitionDiv.empty()}.bind(this),5000);
 				setTimeout(function() {this.fighters.splice(1, 1)}.bind(this),5000);
 				setTimeout(function() {this.choosePlayer(this.canvasDiv)}.bind(this),5000);
+				// setTimeout(function() {$(".background-container").css("background-image", "url('"+game.backgrounds[Math.floor(Math.random() * (4 - 0 + 1))]+"')")},5500);
 			} else if (this.characters.length < 1 && this.opponenthp == 0) {
 				setTimeout(winGame, 2300);
 				setTimeout(function() {this.audiowinGame.play()}.bind(this),2500);
 				setTimeout(function() {this.transitionDiv.empty()}.bind(this),6500);
-				setTimeout(function() {this.restart();}.bind(this),6500);
+				setTimeout(function() {this.restart()}.bind(this),6500);
 			}
 		}
 	},

@@ -16,7 +16,7 @@
 var canvas;
 var context;
 var images = {};
-var totalResources = 15;
+var totalResources = 16;
 var numResourcesLoaded = 0;
 var rlInterval = "";
 var fps = 30;
@@ -54,7 +54,8 @@ var parts = ["leftArm",
 "torso-thrust",
 "legs-thrust",
 "head-thrust",
-"hair-thrust"];
+"hair-thrust",
+"hit"];
 
 function updateFPS() {
 	
@@ -85,7 +86,7 @@ function prepareCanvas(canvasDiv, canvasWidth, canvasHeight, characters)
 	$.each(parts, function(key, val) {
 		loadImage(character, val, characters);
 	});
-	});		
+	});
 }
 
 function loadImage(character, name, characters) {
@@ -94,7 +95,7 @@ function loadImage(character, name, characters) {
   	images[character+name].onload = function() { 
 	  	resourceLoaded(character, characters);
   	}
-  	images[character+name].src = "assets/images/animationImages/" + character + "player" + name + ".png";
+  	images[character+name].src = "assets/images/animationImages/" + character + name + ".png";
 	}
 
 function resourceLoaded(character, characters) {
@@ -245,9 +246,11 @@ function redraw(characters) {
 			if (thrusting) {
 				pcontext.drawImage(images[p+"rightArm-thrust"], x + 5, y - 42 - breathAmt);
 				ocontext.drawImage(images[o+"rightArm"], x - 15, y - 42 - breathAmt);
+				ocontext.drawImage(images[o+"hit"], x - 10, y - 88);
 			} else if (parrying) {
 				ocontext.drawImage(images[o+"rightArm-thrust"], x + 5, y - 42 - breathAmt);
 				pcontext.drawImage(images[p+"rightArm"], x - 15, y - 42 - breathAmt);
+				pcontext.drawImage(images[o+"hit"], x, y - 88);
 			} else if (!jumping && !thrusting){
 				pcontext.drawImage(images[p+"rightArm"], x - 15, y - 42 - breathAmt);
 				ocontext.drawImage(images[o+"rightArm"], x - 15, y - 42 - breathAmt);
