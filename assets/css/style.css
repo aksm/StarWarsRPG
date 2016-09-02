@@ -22,7 +22,7 @@ h1 {
 	text-shadow: -2px -2px 0 #ffff00, 2px -2px 0 #ffff00, -2px 2px 0 #ffff00, 2px 2px 0 #ffff00;
 }
 #canvasDiv {
-	display: inline-block;
+	display: block;
 	margin-top: 50px;
 }
 
@@ -111,8 +111,9 @@ h2 {
 		height: auto;
 	}
 	.transition {
-		width: 200px;
+		width: 300px;
 		height: auto;
+		left: 50px;
 	}
 }
 @media (min-width: 440px) {
@@ -132,6 +133,11 @@ h2 {
 	.characters {
 		width: 150px;
 		height: auto;
+	}
+	.transition {
+		width: 340px;
+		height: auto;
+		left: 100px;
 	}
 
 }
@@ -153,6 +159,11 @@ h2 {
 		width: 200px;
 		height: auto;
 	}
+	.transition {
+		width: 400px;
+		height: auto;
+		left: 150px;
+	}
 
 }
 @media (min-width: 630px) {
@@ -162,16 +173,21 @@ h2 {
     	position: absolute;
   	}
   	.fighter0 {
-		left: 250px;
+		left: 200px;
 		top: 60%;
   	}
   	.fighter1 {
-		left: 360px;
+		left: 310px;
 		top: 60%;
   	}
 	.characters {
 		width: 200px;
 		height: auto;
+	}
+	.transition {
+		width: 400px;
+		height: auto;
+		left: 150px;
 	}
 
 }
@@ -193,8 +209,13 @@ h2 {
 		top: 60%;
   	}
 	.characters {
-		width: 250px;
+		width: 200px;
 		height: auto;
+	}
+	.transition {
+		width: 500px;
+		height: auto;
+		left: 300px;
 	}
 
 }
@@ -216,8 +237,13 @@ h2 {
 		top: 60%;
   	}
 	.characters {
-		width: 250px;
+		width: 200px;
 		height: auto;
+	}
+	.transition {
+		width: 500px;
+		height: auto;
+		left: 400px;
 	}
 
 }
